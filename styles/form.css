@@ -1,0 +1,167 @@
+#formedit{
+    background-color :#ebe9a2e8;
+    width: 500px;
+    border-radius: 4%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+.bgin {
+    background-image: url('../gambar/109996.jpg');
+    background-size: cover;
+   
+    height: 100vh;
+}
+
+.bgedit{
+background-image: url('../gambar/26349.jpg');
+background-size: cover;
+   
+height: auto;
+}
+
+
+#iptback{
+  margin-bottom: 1%;
+}
+
+#formadd{
+    background-color: rgba(216, 219, 223, 0.904);
+    width: 500px;
+    border-radius: 4%;
+  
+}
+    
+
+.noser{
+    width: 80%;
+    background-color: rgba(235, 235, 235, 0.89);
+    overflow: auto;
+    margin: auto;
+    text-Align: center;
+    color:"white";
+    
+}
+
+table {
+    font-size: 14px;
+    color: #444;
+    border-collapse: collapse;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+table thead{
+    background-color: #899396f5;
+    color: #222121;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+center{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+
+.container-home{
+    height: 100vh;
+    background-image: url('../gambar/gambargitar.jpeg');
+    background-size: cover;
+}
+
+  
+.beranda-home {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .beranda-home a {
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 5px 9px;
+    background-color: slategray;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 90%;
+  }
+  
+  .center {
+    text-align: center;
+
+  }
+  .beranda-home a:hover {
+    background-color: #5ab7e2;
+  }
+  
+  h1 {
+    padding: 2%;
+    color: whitesmoke; /* Assuming white text color */
+    /* Add other h1 styles as needed */
+  }
+  
+#header{
+  opacity: 80%;
+  background-color: rgb(51, 51, 51);
+  height: 15%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+
+.logo-container {
+    background-image: url('../logo/koraihoshiumi.png');
+    background-size: cover;
+    position: absolute;
+    border: none;
+    width: 100px; 
+    height: 95px; 
+    margin-left: 25px;
+  }
+  
+
+.listbg{
+  background-color: rgb(204, 204, 204);
+  background-size: cover;
+  height: auto;
+  
+}
+
+#listteks{
+  color: black;
+}
+
+#editteks{
+  color: black;
+}
+#editback{
+  margin-bottom: 1%;
+}
+
+.logoinpt{
+  background-image: url('../logo/koraihoshiumi.png');
+  background-size: cover;
+  position: absolute;
+  border: none;
+  width: 100px; /* Adjust the width as needed */
+  height: 95px; /* Maintain the aspect ratio */
+  margin-left: 25px;
+  
+}
+
+#headerinput{
+
+  background-color: rgb(51, 51, 51);
+  height: 15%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+#hedit{
+  background-color: rgb(51, 51, 51);
+  height: 15%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
