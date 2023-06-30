@@ -34,6 +34,9 @@ const handleSubmitAdd =  (event) => {
     
   event.preventDefault();
   const formData = new FormData(event.target);
+
+  const confirmation = window.confirm("Apakah anda yakin dengan isi data anda?");
+  if (confirmation) {
   koneksiGitar
     .post("/", formData, {
       headers: {
@@ -47,8 +50,12 @@ const handleSubmitAdd =  (event) => {
     .catch((err) => {
       console.log(err);
     });
-   
+} else{
+      window.location.reload();
 }
+};
+
+
 
 useEffect(() => {
   async function getGitar() {
@@ -80,7 +87,7 @@ useEffect(() => {
 if(gitar==null){
   return(
     <div>
-      waiting...
+      Loading...
     </div>
   )
   }else{
@@ -148,8 +155,9 @@ if(gitar==null){
         </tr>
         <br ></br>
             </tbody>
+            
           </table>
-          <input type="submit" />
+          <input type="submit"/>
           
           </form>
   

@@ -14,28 +14,37 @@ const koneksiGitar = axios.create({
 export default function FormGitar() {
 const [gitar, setGitar] = useState(null);
 const [statemerk, setMerk] = useState("");
-const [statetanggal_beli, setTanggal_beli] = useState("2018-07-22");
+const [statetanggal_beli, setTanggal_beli] = useState("yyy-mm-dd");
 const [statejenis, setJenis] = useState("");
 const [stateharga, setHarga] = useState("");
 const [stateno_seri, setNo_seri] = useState("");
 const [statefoto, setFoto] = useState("");
 
+
 const handleDelete = (event) => {
   event.preventDefault();
   var no_seri= event.target.value;
-  koneksiGitar.delete(`/${no_seri}`)
-  .then(response => {
-  console.log('Data berhasil dihapus:', response.data);
-  window.location.reload();
-  setGitar(
-  gitar.filter((gitar) => {
-  return gitar.no_seri !== no_seri;
-  }))
-  })
-  .catch(error => {
-  console.error('Gagal menghapus data:', error);
-  })
-}
+  
+  const confirmation = window.confirm("Apakah Anda yakin ingin menghapus data?");
+  if (confirmation) {
+    koneksiGitar
+      .delete(`/${no_seri}`)
+      .then((response) => {
+        console.log('Data berhasil dihapus:', response.data);
+        window.location.reload();
+        setGitar(
+          gitar.filter((gitar) => {
+            return gitar.no_seri !== no_seri;
+          })
+        );
+      })
+      .catch((error) => {
+        console.error('Gagal menghapus data:', error);
+      });
+  } else {
+    console.log();
+  }
+};
     
 
   const handleSubmitEdit =  (event) => {
@@ -48,6 +57,8 @@ const handleDelete = (event) => {
           tanggal_beli: event.target.tanggal_beli.value,
           harga: event.target.harga.value
       }
+      const confirmation = window.confirm("Apakah anda yakin sudah melakukan perubahan data?");
+      if (confirmation) {
         koneksiGitar
           .put( address,formData)
           .then((res) => {
@@ -58,7 +69,10 @@ const handleDelete = (event) => {
             console.log(err);
           });
       
+        }else{
+          window.location.reload();
         }
+      }
 
         const handleEdit = (event) => {
             event.preventDefault();
@@ -107,7 +121,7 @@ const handleDelete = (event) => {
       if(gitar==null){
         return(
           <div>
-            waiting...
+            Loading...
           </div>
         )
         }else{

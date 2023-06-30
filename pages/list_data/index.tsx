@@ -36,7 +36,7 @@ const koneksiGitar = axios.create({
       if(gitar==null){
         return(
           <div>
-            waiting...
+            Loading...
           </div>
         )
         }else{
@@ -51,15 +51,14 @@ const koneksiGitar = axios.create({
           <h1>Kouraii's Guitar</h1>
         </center>
         <div className='beranda-home'>
-        <Link href="/pembelian">Daftar Pembelian</Link><br></br>
+          <Link href="/pembelian">Isi Data Pembelian</Link><br></br>
           <Link href="/pengubahan">Pengubahan Pembelian</Link><br></br>
           <Link href="/">Beranda</Link><br></br>
         </div>
       </header>
       <br></br>         
-
+            
         <table className="noser">
-
         <thead>
         <tr style={{textAlign:'center'}}>
                     <td><b>No Seri</b></td>

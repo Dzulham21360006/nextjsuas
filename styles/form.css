@@ -1,5 +1,5 @@
 #formedit{
-    background-color :#ebe9a2e8;
+    background-color :#f3d279e8;
     width: 500px;
     border-radius: 4%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
@@ -56,6 +56,7 @@ table thead{
 }
 
 center{
+  color: #dfdede;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
 }
 
@@ -83,7 +84,6 @@ center{
     padding: 5px 9px;
     background-color: slategray;
     color: black;
-    text-decoration: none;
     border-radius: 10px;
     transition: background-color 0.3s;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
@@ -95,18 +95,21 @@ center{
 
   }
   .beranda-home a:hover {
-    background-color: #5ab7e2;
+    background-color: #83878a91;
   }
   
   h1 {
     padding: 2%;
-    color: whitesmoke; /* Assuming white text color */
-    /* Add other h1 styles as needed */
+    color: whitesmoke;
+  }
+
+  h3{
+    color: #222121;
+    padding: 1%;
   }
   
 #header{
-  opacity: 80%;
-  background-color: rgb(51, 51, 51);
+  background-color: rgba(51, 51, 51, 0.836);
   height: 15%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
 }
@@ -124,7 +127,7 @@ center{
   
 
 .listbg{
-  background-color: rgb(204, 204, 204);
+  background-color: rgba(168, 168, 168, 0.911);
   background-size: cover;
   height: auto;
   
@@ -165,3 +168,16 @@ center{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
 }
 
+
+#bio{
+  background-color: rgba(51, 51, 51, 0.623);
+  color: #dfdede;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  font-size: medium;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 150px;
+  border-radius: 10px;
+  
+}
